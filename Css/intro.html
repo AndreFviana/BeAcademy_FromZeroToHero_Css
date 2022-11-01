@@ -9,7 +9,10 @@
   -Seletor glogal representado por asterisco *
   -seletor usando o ID rexiteg(#), exemplo:#box ou #conteiner
   -Seletor usando class (.) exemplo: .box , .conteiner
-  -atribute class, peseudo class
+  -atribute class, peseudo class.
+  
+  É possivel fazer a alteração direto na tag, chama-se inline, exemplo:<h1 style="background:red; color: blue; ">
+  </h1>
 
 -->
 <!DOCTYPE html>
@@ -19,27 +22,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Entendo CSS</title>
+  <link rel="stylesheet" href="./asstes/style.css">
+  
+  
+  <!--<style>
+  h1{
+  border: 1px solid red;
+  margin: 32px;
+  padding: 24px;
+   }
+
+ </style>
+-->
 </head>
 <!-- A liguagem de padrão de escrita aqui será Kebab Case-->
-<style>
-h1 {
-color:red;
-font: size 40px;
-background: rgb(39, 39, 80);
-}
 
-
-</style>
+<!--è interessante que a tag <style> seja utilizada dentro da tag <head>-->
 <body>
+  <div class="container">
+
   <h1>
 
-    Eu sou um titulo
+    Apredendo css 3
 
   </h1>
-  <h2>
-    Subtitulo
-  </h2>
+  
+
+  
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reprehenderit architecto asperiores ea repudiandae corporis, perspiciatis necessitatibus illo dolorem quos! Eum nemo laborum asperiores nobis labore, nihil maiores minima. Saepe.</p>
+  </div>
 
 
 
