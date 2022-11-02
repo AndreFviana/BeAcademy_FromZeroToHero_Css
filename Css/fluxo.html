@@ -1,0 +1,58 @@
+<!--
+  Este arquivo foi criado para mostrar o grau de importância de cada uma das tags-css para o navegador:
+  A tag INLINE, aquela que você modifica o estilo diretamente no código html é a PRIORITÁRIA para o navegador, exemplo: 
+  <h1 style="background: brown; color: yellow;">
+    Andre Felipe Viana dos Santos
+  </h1>
+
+  A tag <STYLE> é a SEGUNDA MAIS FORTE em prioridade para o navegador, ela é aquela que você coloca as chaves, exemplo:
+    h1{
+      background: brown;
+      color: yellow;
+    }
+
+    A tag LINK é a de MENOR PRIORIDADE para o navegador, ela é aquela que você abre a tag <link rel="stylesheet" href="./">
+
+    Resumindo, se eu colocar o mesmo codigo escrito nas 3 formas de estilo, o navegador irá fazer a leitura do INLINE, mesmo estando abaixo dos outros na hierarquia. Outro ponto importante é que a tag LINK apesar de ter menos importância para o navegador, ela é a mais utilzada para programadores(as) por deixar o código mais organizado.
+
+-->
+
+<!--ESPECIFICIDADE-->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Teste CSS</title>
+  <style>
+    h1{
+      background:brown;
+      color:yellow;
+    }
+    #super-title{
+      background:green;
+    }
+    h1{
+      background: black;
+    }
+    .my-title-2{
+      background:blue;
+    }
+    strong{
+      color:violet;
+    }
+    .my-text strong{
+      color:aqua;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="super-title">Testantando especificidades</h1>
+  <p class="my-text">
+    Lorem ipsum dolor sit, amet <strong>consectetur</strong>  adipisicing elit. Dolore sunt natus nisi eveniet, nihil consectetur doloribus deserunt, dolores doloremque quisquam ea laudantium quam. Explicabo exercitationem a veniam aperiam perferendis est?
+  </p>
+  <h1 class="my-title-2">Testando especificidades</h1>
+  <p class="my-text-2">Lorem ipsum dolor sit amet <strong>consectetur</strong>, adipisicing elit. Impedit earum porro qui minus laboriosam modi sunt non consequuntur, veritatis beatae consequatur voluptates blanditiis provident explicabo autem dolorum eveniet velit aperiam.</p>
+</body>
+</html>
