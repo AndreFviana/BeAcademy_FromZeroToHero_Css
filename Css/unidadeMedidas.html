@@ -16,7 +16,9 @@ Dimension é um <number> com unidade junto tipo 90seg, 2s, 8px
   utulizaremos muito o EM, vai dar o tamanho da fonte do pai.
 
   REM, que da o tamanho da raiz(root)
-
+  
+A unidade de medida REM é a divisão do valor desejado em px pelo root(estará em px) . exemplo: 24/18 = 1 ,4rem.
+Já o EM , você divide o valor em px pelo valor da "class" que estará acima(pai).
   VW, repesenta 1% do witdh
 
   vh, representa 1% do heigth
@@ -55,7 +57,9 @@ Dimension é um <number> com unidade junto tipo 90seg, 2s, 8px
     .card{
       font-size: 48px;
     }
-  
+    .text-box {
+      font-size: 0.5em;/*esse valor é igual a 24px*/
+    }
 
   </style>
 </head>
