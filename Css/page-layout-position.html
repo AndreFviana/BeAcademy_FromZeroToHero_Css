@@ -1,0 +1,62 @@
+<!--
+ - POSITIONS e herança de classes.
+
+ - Existem 5 valores de posição diferente:
+  static/ relative/ fixed/ absolute/ e sticky:
+   No position RELATIVE, uma box irá se adequar a margin do background; 
+   No position FIXED, a box irá ficar fixa na tela, mesmo se você descer a barra de rolagem do navegador.
+-->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+  <style>
+   
+    .box {
+      width:50px;
+      height:50px;
+      margin-bottom: 800px;
+    }
+    .box-1 {
+      background:red;
+      position: absolute;
+      left:5px;
+      top: 10px;
+      
+
+    }
+
+    .box-2 {
+      background:green;
+      position: absolute;
+      left:10px;
+      top: 15px;
+      z-index:3
+    }
+
+    .box-3{
+      background:blue;
+      position: absolute;
+      left:15px;
+      top: 20px;
+      
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+  <div class=" box box-1"
+></div>
+  <div class="box box-2"
+></div>
+  <div class="box box-3"
+></div>
+  </div>
+  </main>
+       
+</body>
+</html>
