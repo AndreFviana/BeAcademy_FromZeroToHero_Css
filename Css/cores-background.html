@@ -1,0 +1,41 @@
+<!--
+  Para declarar cores, podemos escrever: a palavra em ingles; um codigo hexadecimal #jhs563
+  . Tambem podemos acessae as cores pelas funcções: rgb,hsl,rgba
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background and color</title>
+</head>
+<style>
+  * {
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+
+  }
+  .bg-box{
+    width: 600px;
+    height: 600px;
+    background: rgb(247, 127, 147);
+    border :8px black dotted;
+    padding: 16px;
+    background-image:url("https://source.unsplash.com/random");
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    background-attachment:fixed;
+    background: radial-gradient(rbga(0,90,0,1)), (rgba(0,90,0,0,0.5));
+  }
+</style>
+<body>
+  <div class="conteiner">
+    <div class="bg-box">
+  </div>
+  <h1>Testando</h1>
+</body>
+</html>
