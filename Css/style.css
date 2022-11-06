@@ -1,0 +1,7 @@
+body p:nth-of-type(2) {
+  red;
+}
+
+body p:nth-child(3) {
+  color: blue;
+}
