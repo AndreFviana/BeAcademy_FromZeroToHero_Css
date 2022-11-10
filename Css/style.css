@@ -4,6 +4,6 @@ ul li:nth-child(even) {
 
 }
 
-ul li:first-child(2) {
+ul li:first-child {
   color: rgb(58, 89, 190);
 }
